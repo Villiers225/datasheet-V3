@@ -1,0 +1,49 @@
+meta:
+  title: "War, Tech & Markets – Datasheet"
+  description: "Live-linked briefing with sources"
+  last_updated: "2025-11-10"
+
+# Top-level narrative blocks (each will render as a card/box)
+sections:
+  - id: "1"
+    heading: "1. The perceived likelihood of peer-war has changed"
+    # You can write Markdown; links will stay live in the HTML
+    body_md: |
+      World military expenditure is up **+37% (2015–2024)**, with Europe **+83%**.  
+      Military aid to Ukraine totals **$125bn**. Sources: [SIPRI](https://www.sipri.org/), [EU Council](https://www.consilium.europa.eu/en/policies/defence-numbers/).
+
+    datapoints:
+      - label: "NATO at 2% GDP"
+        value: "18 members (2024)"
+        source_text: "NATO factsheet"
+        source_url: "https://www.nato.int/"
+      - label: "EU defence investment YoY"
+        value: "+42% (2023–2024)"
+        source_text: "EU Council"
+        source_url: "https://www.consilium.europa.eu/en/policies/defence-numbers/"
+
+  - id: "2"
+    heading: "2. War’s relationship with technology has changed"
+    body_md: |
+      Software-defined, networked systems compress the OODA loop; autonomy is a structural inflection.
+    datapoints:
+      - label: "OTA updates"
+        value: "Normalised in AI-optimised platforms"
+        source_text: "Industry brief"
+        source_url: "https://example.com/ota"
+
+  - id: "3"
+    heading: "3. NATO’s defence-tech ecosystem has shifted"
+    body_md: |
+      Proliferation of smaller, investor-backed vendors; scaling and integration remain the chokepoints.
+    datapoints: []
+
+  - id: "4"
+    heading: "4. We have not adequately adjusted"
+    body_md: |
+      CAPDEV models lag; recce-strike disruption outpaces doctrine.
+    datapoints: []
+
+footer:
+  contact_md: |
+    Compiled for internal review. Export as static HTML; links remain active.

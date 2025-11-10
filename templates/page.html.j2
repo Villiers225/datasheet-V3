@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ meta.title }}</title>
+  <meta name="description" content="{{ meta.description }}" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>{{ meta.title }}</h1>
+    <p class="description">{{ meta.description }}</p>
+    <p class="meta">Last updated: {{ meta.last_updated }}</p>
+  </header>
+
+  <main>
+    {% for sec in sections %}
+      <section id="section-{{ sec.id }}" class="card">
+        <h2>{{ sec.heading }}</h2>
+        <div class="prose">
+          {{ sec.body_md | markdown }}
+        </div>
+
+        {% if sec.datapoints and sec.datapoints|length > 0 %}
+        <div class="datagrid">
+          {% for d in sec.datapoints %}
+            <div class="datacard">
+              <div class="label">{{ d.label }}</div>
+              <div class="value">{{ d.value }}</div>
+              {% if d.source_url %}
+                <div class="source">
+                  <a href="{{ d.source_url }}" target="_blank" rel="noopener">{{ d.source_text or d.source_url }}</a>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </section>
+    {% endfor %}
+  </main>
+
+  <footer class="page-footer">
+    <div class="prose">
+      {{ footer.contact_md | markdown }}
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "html-builder",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {},
+  "postCreateCommand": "pip install -r requirements.txt"
+}
