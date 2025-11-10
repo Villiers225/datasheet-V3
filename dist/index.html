@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Armies & Technology — Data Sheet (v3)</title>
+<title>Armies & Technology — Data Sheet</title>
 <style>
 :root{
   --bg:#0f1620; --ink:#eaf1f7; --muted:#b7c0cb; --accent:#8fb4ff;
@@ -65,13 +65,11 @@ a:hover{opacity:.9}
 <div class="wrapper">
   <h1>Armies & Technology — Data Sheet</h1>
   <div class="headerline"></div>
-  <p class="kicker">Version: 2025-11-10 16:25 UTC. Bullets verbatim; figures restricted per spec. Footnotes retained.</p>
 
   <!-- SECTION 1 -->
   <div class="section" id="s1">
     <h2>1. War’s relationship with technology has changed.</h2>
 
-    <!-- BULLETS: VERBATIM -->
     <ul>
       <li>the 4IR has seen military hardware become more intelligent, connected and software-defined; and progress continues</li>
       <li>these smart machines have changed the character of combat (recce-strike; active survival; combat economics)</li>
@@ -79,16 +77,13 @@ a:hover{opacity:.9}
       <li>autonomy appears to be a generational inflection point</li>
     </ul>
 
-    <!-- EVIDENCE TEXT (punchier, no extra figures) -->
     <p style="margin-top:10px">
-      Networked sensors plus precision fires degraded roughly half of Russian combat effectiveness within ~18 months; the tempo shows in drone attrition (~10,000/month in 2023 rising beyond 20,000/month in 2024). A transparent battlespace imposes a ~30&nbsp;km attrition belt; only 23 Russian tanks sat within 70&nbsp;km of the front in Aug&nbsp;2024 vs 470 in May&nbsp;2023, with survivability driven by ISR/EW/UGVs rather than mass <a href="#fn4">[4]</a>. One French CSO satellite generates ~1,000 images/day while analysts processed ~5% pre-Maven and most Predator video went unused <a href="#fn9">[9]</a>. Hardware has inverted: F-4 ~8% software → F-22 ~80% → F-35 ~95%+. EMS-level software can update hourly <a href="#fn9">[9]</a>. AI-enabled automation lowers software-development burden so SDH is viable even in low-volume aerospace/defence <a href="#fn3">[3]</a>.
+      Networked sensors plus precision fires degraded roughly half of Russian combat effectiveness within ~18 months; drone attrition accelerated (~10,000/month in 2023 rising beyond 20,000/month in 2024). A transparent battlespace imposes a ~30 km attrition belt; only 23 Russian tanks sat within 70 km of the front in Aug 2024 vs 470 in May 2023 <a href="#fn4">[4]</a>. One French CSO satellite generates ~1,000 images/day while analysts processed ~5% pre-Maven; most Predator video went unused <a href="#fn9">[9]</a>. Hardware has inverted: F-4 ≈8% software → F-22 ≈80% → F-35 ≈95%+. EMS-level software can update hourly <a href="#fn9">[9]</a>. AI-enabled automation reduces software-development burden enough to make SDH viable in low-volume aerospace/defence <a href="#fn3">[3]</a>.
     </p>
 
-    <!-- SINGLE FIGURE ALLOWED: Analyst processing then vs now (assume 100%) -->
     <div class="chart-box" style="margin-top:10px">
       <div class="panel-title">Analyst throughput — then vs now (assumed)</div>
-      <svg viewBox="0 0 560 90" role="img" aria-label="Analyst processing rate before vs now">
-        <title>Analyst processing rate before vs now</title>
+      <svg viewBox="0 0 560 90" role="img">
         <text x="0" y="26" class="chart-label">Pre-Project Maven (processed)</text>
         <rect x="180" y="12" width="28" height="18" class="bar"/>
         <text x="214" y="26" class="chart-value">≈5%</text>
@@ -97,7 +92,7 @@ a:hover{opacity:.9}
         <rect x="180" y="38" width="360" height="18" class="bar"/>
         <text x="546" y="52" class="chart-value">100%</text>
       </svg>
-      <div class="small">Pre-Maven processing rate from <a href="#fn9">[9]</a>. “Now” shown as <strong>assumed 100%</strong> per brief; adjust when measured data is available.</div>
+      <div class="small">Pre-Maven processing ~5% <a href="#fn9">[9]</a>. “Now” shown as assumed 100% until measured data is available.</div>
     </div>
   </div>
 
@@ -105,7 +100,6 @@ a:hover{opacity:.9}
   <div class="section" id="s2">
     <h2>2. NATO’s defence technology ecosystem has shifted significantly in response.</h2>
 
-    <!-- BULLETS: VERBATIM -->
     <ul>
       <li>proliferation of new, smaller, investor-backed specialist vendors</li>
       <li>especially proficient at low-cost, commercially-driven, software-centric, AI-enabled technologies and autonomous systems</li>
@@ -116,11 +110,11 @@ a:hover{opacity:.9}
     <div class="grid" style="margin-top:10px">
       <div class="chart-box">
         <div class="panel-title">DoD share of global R&amp;D</div>
-        <svg viewBox="0 0 420 68" role="img" aria-label="DoD share of global R&D">
-          <title>DoD share of global R&D</title>
+        <svg viewBox="0 0 420 68" role="img">
           <text x="0" y="26" class="chart-label">1960</text>
           <rect x="130" y="12" width="252" height="18" class="bar"/>
-          <text x="388" y="26" class="chart-value">36%</a></text>
+          <text x="388" y="26" class="chart-value">36%</text>
+
           <text x="0" y="52" class="chart-label">Now</text>
           <rect x="130" y="38" width="7" height="18" class="bar"/>
           <text x="143" y="52" class="chart-value">~1%</text>
@@ -130,14 +124,15 @@ a:hover{opacity:.9}
 
       <div class="chart-box">
         <div class="panel-title">EV / EBITDA (valuation context)</div>
-        <svg viewBox="0 0 420 94" role="img" aria-label="EV / EBITDA">
-          <title>EV / EBITDA</title>
+        <svg viewBox="0 0 420 94" role="img">
           <text x="0" y="26" class="chart-label">DefTech 2025</text>
           <rect x="130" y="12" width="232" height="18" class="bar"/>
           <text x="368" y="26" class="chart-value">24.9×</text>
+
           <text x="0" y="52" class="chart-label">DefTech 2026F</text>
           <rect x="130" y="38" width="184" height="18" class="bar"/>
           <text x="320" y="52" class="chart-value">19.8×</text>
+
           <text x="0" y="78" class="chart-label">Euro Primes</text>
           <rect x="130" y="64" width="134" height="18" class="bar"/>
           <text x="270" y="78" class="chart-value">14.4×</text>
@@ -147,11 +142,11 @@ a:hover{opacity:.9}
 
       <div class="chart-box">
         <div class="panel-title">Indexed performance since US election</div>
-        <svg viewBox="0 0 420 68" role="img" aria-label="Indexed performance since US election">
-          <title>Indexed performance since US election</title>
+        <svg viewBox="0 0 420 68" role="img">
           <text x="0" y="26" class="chart-label">DefTech</text>
           <rect x="130" y="12" width="262" height="18" class="bar"/>
           <text x="398" y="26" class="chart-value">150%</text>
+
           <text x="0" y="52" class="chart-label">Primes</text>
           <rect x="130" y="38" width="19" height="18" class="bar"/>
           <text x="155" y="52" class="chart-value">11%</text>
@@ -161,9 +156,7 @@ a:hover{opacity:.9}
 
       <div class="chart-box">
         <div class="panel-title">Capital flows (Europe defence-tech)</div>
-        <svg viewBox="0 0 420 110" role="img" aria-label="Capital flows and investor count">
-          <title>Capital flows and investor count</title>
-          <!-- Funding bars -->
+        <svg viewBox="0 0 420 110" role="img">
           <text x="0" y="26" class="chart-label">2024</text>
           <rect x="130" y="12" width="120" height="18" class="bar"/>
           <text x="254" y="26" class="chart-value">~€1.8bn</text>
@@ -172,7 +165,6 @@ a:hover{opacity:.9}
           <rect x="130" y="38" width="232" height="18" class="bar"/>
           <text x="368" y="52" class="chart-value">~€3.5bn</text>
 
-          <!-- Investor slope (approximate positions for 58 -> 225) -->
           <text x="0" y="96" class="chart-label">Investors</text>
           <circle cx="300" cy="92" r="3" fill="#8fb4ff"></circle>
           <text x="288" y="86" class="chart-value">58 (2019)</text>
@@ -188,7 +180,6 @@ a:hover{opacity:.9}
   <div class="section" id="s3">
     <h2>3. We have not adequately adjusted to either change.</h2>
 
-    <!-- BULLETS: VERBATIM -->
     <ul>
       <li>most NATO armies lack a winning response to disruption created by new recce-strike technologies</li>
       <li>CAPDEV mindsets and models make purchasing novel software-defined hardware difficult, especially from new vendors</li>
@@ -197,48 +188,45 @@ a:hover{opacity:.9}
     </ul>
 
     <div class="tile-col" style="margin-top:10px">
-      <!-- FIG 1: Large percentage tile for procurement share -->
+
       <div class="tile">
         <div style="text-align:center">
           <div class="big">80%</div>
-          <div class="sub">EU defence investment to <strong>equipment procurement</strong> (2023→2024)<br/>Remaining ~20% to R&amp;D/other <a href="#fn2">[2]</a></div>
+          <div class="sub">Share of EU defence investment going to <strong>equipment procurement</strong> <a href="#fn2">[2]</a></div>
         </div>
       </div>
 
-      <!-- FIG 3: Scaled circles (China vs UK sovereign AI pledge) -->
       <div class="tile">
         <div>
           <div class="panel-title" style="text-align:center">Sovereign AI/software funding</div>
           <div class="circle-row">
             <div style="text-align:center">
               <span class="circle" style="width:140px;height:140px;background:radial-gradient(circle at 35% 35%, var(--hot), transparent 60%), var(--hot);opacity:.9"></span>
-              <div class="circle-label">China pledge<br/><strong>$148.6bn</strong> by 2030 <a href="#fn9">[9]</a></div>
+              <div class="circle-label">China<br/><strong>$148.6bn</strong> by 2030 <a href="#fn9">[9]</a></div>
             </div>
             <div style="text-align:center">
               <span class="circle" style="width:46px;height:46px;background:radial-gradient(circle at 35% 35%, var(--cool), transparent 60%), var(--cool);opacity:.9"></span>
-              <div class="circle-label">UK est.<br/><strong>~$3.5bn</strong> to 2030 <a href="#fn9">[9]</a></div>
+              <div class="circle-label">UK<br/><strong>~$3.5bn</strong> by 2030 <a href="#fn9">[9]</a></div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- FIG 4: Vendor compression 51 -> 5 -->
       <div class="tile">
         <div style="text-align:center">
-          <div class="panel-title">US defence procurement concentration</div>
+          <div class="panel-title">US procurement concentration</div>
           <div class="stack">
-            <span class="pill">Cold War: 51 major vendors</span>
+            <span class="pill">Cold War: 51 vendors</span>
             <span>→</span>
             <span class="pill"><strong>Today: 5 primes ≈40%</strong> of procurement <a href="#fn8">[8]</a></span>
           </div>
         </div>
       </div>
 
-      <!-- FIG 5: Sustainment ≈70% of acquisition -->
       <div class="tile">
         <div style="text-align:center">
           <div class="big">≈70%</div>
-          <div class="sub">Share of acquisition spend going to <strong>sustainment</strong> (value not specified in cited set) <a href="#fn8">[8]</a></div>
+          <div class="sub">Share of acquisition spend going to <strong>sustainment</strong> <a href="#fn8">[8]</a></div>
         </div>
       </div>
     </div>
@@ -248,7 +236,6 @@ a:hover{opacity:.9}
   <div class="section" id="s4">
     <h2>4. A new paradigm is required.</h2>
 
-    <!-- BULLETS: VERBATIM -->
     <ul>
       <li>place software-defined capability at the centre and normalise rapid upgrades and iteration</li>
       <li>future security and prosperity depend on nurturing NATO’s defence-technology ecosystem</li>
@@ -256,33 +243,35 @@ a:hover{opacity:.9}
       <li>requires shifts in philosophy, processes and funding orthodoxies</li>
     </ul>
 
-    <!-- ONLY FIG 2: VC-backed DoD awards up ~20x -->
     <div class="tile" style="margin-top:10px">
       <div style="text-align:center">
         <div class="big">~20×</div>
-        <div class="sub">Growth in DoD awards to <strong>VC-backed firms</strong> (rapid acquisition era) <a href="#fn7">[7]</a></div>
+        <div class="sub">Growth in DoD awards to <strong>VC-backed firms</strong> <a href="#fn7">[7]</a></div>
       </div>
     </div>
 
-    <p class="note" style="margin-top:10px">Complementary evidence (kept textual as requested): OTA contracting up ~95%; USAF planning 1,000–2,000 collaborative autonomous aircraft; thousands of low-cost autonomous systems fielded in 18–24 months; software-first standards (AUTOSAR Classic, SOAFEE) and mass-scale simulation (~8&nbsp;million miles/day) <a href="#fn7">[7]</a><a href="#fn3">[3]</a>.</p>
+    <p class="note" style="margin-top:10px">
+      OTA contracting up ~95%; USAF planning 1,000–2,000 collaborative autonomous aircraft; thousands of low-cost autonomous systems fielded in 18–24 months; software-first standards (AUTOSAR Classic, SOAFEE) and mass-scale simulation (~8 million miles/day) <a href="#fn7">[7]</a><a href="#fn3">[3]</a>.
+    </p>
   </div>
 
   <hr>
+
   <h2>References</h2>
   <ol class="footnotes">
     <li id="fn1">[1] SIPRI Fact Sheet 2024 — world and Europe trends.</li>
     <li id="fn2">[2] Council of the EU — Defence in Numbers, 2023→2024.</li>
     <li id="fn3">[3] McKinsey — Software-defined hardware in the age of AI.</li>
     <li id="fn4">[4] RUSI — Emergent Approaches to Combined Arms Manoeuvre in Ukraine.</li>
-    <li id="fn5">[5] Clairfield — Defence Technology Report 2025 (valuation multiples).</li>
+    <li id="fn5">[5] Clairfield — Defence Technology Report 2025.</li>
     <li id="fn6">[6] Sifted — Europe’s defence-tech deals 2025.</li>
-    <li id="fn7">[7] Accenture — Defense Insight Report, June 2025; US Acquisition Transformation notes.</li>
+    <li id="fn7">[7] Accenture — Defense Insight Report; US Acquisition Transformation.</li>
     <li id="fn8">[8] Baird — Defence Technology market data; US acquisition consolidation.</li>
-    <li id="fn8m">Moneyball Military — Historical DoD share of global R&amp;D.</li>
-    <li id="fn9">[9] Soare — Software-defined defence; CSO imagery; Predator/Maven; EMS update cadence; UK/China AI pledges.</li>
+    <li id="fn8m">Moneyball Military — Historical DoD share of global R&D.</li>
+    <li id="fn9">[9] Soare — Software-defined defence; ISR; Predator/Maven; AI pledges.</li>
     <li id="fn10">[10] Dealroom — Global VC; AI share.</li>
   </ol>
-  <p class="small">Footnotes retain prior numbering. Replace placeholders with live URLs when finalising.</p>
+
 </div>
 </body>
 </html>
