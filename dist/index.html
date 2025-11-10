@@ -1,277 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Armies & Technology — Data Sheet</title>
-<style>
-:root{
-  --bg:#0f1620; --ink:#eaf1f7; --muted:#b7c0cb; --accent:#8fb4ff;
-  --panel:#141e2a; --rule:#263444; --caption:#9aa6b3;
-  --tile:#0d1520; --hot:#ffd39b; --cool:#a9c7ff; --ok:#9be4ff; --warn:#ff9bd1; --good:#c4ffa9;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:"Gill Sans MT", Inter, Helvetica, Arial, sans-serif;line-height:1.5}
-.wrapper{max-width:1040px;margin:0 auto;padding:32px 20px 96px}
-h1{font-size:34px;margin:0 0 12px 0;letter-spacing:.2px}
-h2{font-size:20px;margin:22px 0 10px 0;color:var(--accent)}
-p,li{font-size:16px}
-.section{background:var(--panel);border:1px solid var(--rule);border-radius:14px;
-  padding:16px 18px;margin-bottom:16px}
-hr{border:none;height:1px;background:var(--rule);margin:28px 0}
-ul{margin:8px 0 0 18px}
-a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
-a:hover{opacity:.9}
-.small{font-size:14px;color:var(--caption)}
-.headerline{height:2px;background:linear-gradient(90deg,var(--accent),transparent);
-  margin:12px 0 18px 0}
-.kicker{color:var(--muted);font-size:14px;margin:4px 0 12px 0}
-.grid{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:860px){.grid{grid-template-columns:1.1fr .9fr}}
-
-.panel-title{font-weight:600;color:var(--muted);margin-bottom:6px;font-size:14px}
-.chart-box{background:var(--tile);border:1px solid var(--rule);border-radius:12px;padding:12px}
-.chart-label{fill:var(--muted);font-size:12px}
-.chart-value{fill:var(--ink);font-size:12px}
-.bar{fill:#8fb4ff}
-
-.tile{background:var(--tile);border:1px solid var(--rule);border-radius:12px;padding:16px;display:flex;align-items:center;justify-content:center;min-height:120px}
-.tile .big{font-size:34px;font-weight:700}
-.tile .sub{color:var(--muted);font-size:13px;margin-top:6px;text-align:center}
-.tile-col{display:grid;grid-template-columns:1fr;gap:10px}
-@media(min-width:860px){.tile-col{grid-template-columns:repeat(2,1fr)}}
-
-.circle-row{display:flex;align-items:center;gap:16px;justify-content:center}
-.circle{border-radius:50%;display:inline-block}
-.circle-label{font-size:13px;color:var(--muted);text-align:center;margin-top:6px}
-.stack{display:flex;align-items:center;gap:10px;justify-content:center}
-.stack .pill{background:#1a2634;border:1px solid var(--rule);padding:4px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
-
-.legend{margin-top:8px}
-.legend-row{display:flex;align-items:center;gap:8px;margin:3px 0}
-.swatch{display:inline-block;width:10px;height:10px;border-radius:2px;background:#a9c7ff}
-.legend-label{flex:1;color:var(--muted);font-size:12px}
-.legend-val{font-size:12px;color:var(--ink)}
-.note{background:#0c141e;border:1px dashed var(--rule);border-radius:10px;padding:10px;font-size:14px;color:var(--muted)}
-
-.footnotes{font-size:14px;color:var(--caption)}
-.footnotes li{margin:6px 0}
-.badge{display:inline-block;background:#1a2634;border:1px solid var(--rule);padding:2px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
-.inline-metric{display:inline-block;padding:6px 10px;border:1px solid var(--rule);border-radius:10px;background:#0d1520;margin:2px 6px 2px 0}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>War, Tech & Markets – Datasheet</title>
+  <meta name="description" content="Live-linked briefing with sources" />
+  <link rel="stylesheet" href="../assets/styles.css" />
 </head>
 <body>
-<div class="wrapper">
-  <h1>Armies & Technology — Data Sheet</h1>
-  <div class="headerline"></div>
+  <header class="page-header">
+    <h1>War, Tech & Markets – Datasheet</h1>
+    <p class="description">Live-linked briefing with sources</p>
+    <p class="meta">Last updated: 2025-11-10</p>
+  </header>
 
-  <!-- SECTION 1 -->
-  <div class="section" id="s1">
-    <h2>1. War’s relationship with technology has changed.</h2>
-
-    <ul>
-      <li>the 4IR has seen military hardware become more intelligent, connected and software-defined; and progress continues</li>
-      <li>these smart machines have changed the character of combat (recce-strike; active survival; combat economics)</li>
-      <li>software-defined hardware now drives army competitiveness</li>
-      <li>autonomy appears to be a generational inflection point</li>
-    </ul>
-
-    <p style="margin-top:10px">
-      Networked sensors plus precision fires degraded roughly half of Russian combat effectiveness within ~18 months; drone attrition accelerated (~10,000/month in 2023 rising beyond 20,000/month in 2024). A transparent battlespace imposes a ~30 km attrition belt; only 23 Russian tanks sat within 70 km of the front in Aug 2024 vs 470 in May 2023 <a href="#fn4">[4]</a>. One French CSO satellite generates ~1,000 images/day while analysts processed ~5% pre-Maven; most Predator video went unused <a href="#fn9">[9]</a>. Hardware has inverted: F-4 ≈8% software → F-22 ≈80% → F-35 ≈95%+. EMS-level software can update hourly <a href="#fn9">[9]</a>. AI-enabled automation reduces software-development burden enough to make SDH viable in low-volume aerospace/defence <a href="#fn3">[3]</a>.
-    </p>
-
-    <div class="chart-box" style="margin-top:10px">
-      <div class="panel-title">Analyst throughput — then vs now (assumed)</div>
-      <svg viewBox="0 0 560 90" role="img">
-        <text x="0" y="26" class="chart-label">Pre-Project Maven (processed)</text>
-        <rect x="180" y="12" width="28" height="18" class="bar"/>
-        <text x="214" y="26" class="chart-value">≈5%</text>
-
-        <text x="0" y="52" class="chart-label">Now (assumed processed)</text>
-        <rect x="180" y="38" width="360" height="18" class="bar"/>
-        <text x="546" y="52" class="chart-value">100%</text>
-      </svg>
-      <div class="small">Pre-Maven processing ~5% <a href="#fn9">[9]</a>. “Now” shown as assumed 100% until measured data is available.</div>
-    </div>
-  </div>
-
-  <!-- SECTION 2 -->
-  <div class="section" id="s2">
-    <h2>2. NATO’s defence technology ecosystem has shifted significantly in response.</h2>
-
-    <ul>
-      <li>proliferation of new, smaller, investor-backed specialist vendors</li>
-      <li>especially proficient at low-cost, commercially-driven, software-centric, AI-enabled technologies and autonomous systems</li>
-      <li>tech companies and investors are now major players in defence innovation – but challenges remain (integration, scaling)</li>
-      <li>investors are betting on a market shift from big to small; but many hedge by backing the primes</li>
-    </ul>
-
-    <div class="grid" style="margin-top:10px">
-      <div class="chart-box">
-        <div class="panel-title">DoD share of global R&amp;D</div>
-        <svg viewBox="0 0 420 68" role="img">
-          <text x="0" y="26" class="chart-label">1960</text>
-          <rect x="130" y="12" width="252" height="18" class="bar"/>
-          <text x="388" y="26" class="chart-value">36%</text>
-
-          <text x="0" y="52" class="chart-label">Now</text>
-          <rect x="130" y="38" width="7" height="18" class="bar"/>
-          <text x="143" y="52" class="chart-value">~1%</text>
-        </svg>
-        <div class="small"><a href="#fn8m">[Moneyball Military]</a></div>
-      </div>
-
-      <div class="chart-box">
-        <div class="panel-title">EV / EBITDA (valuation context)</div>
-        <svg viewBox="0 0 420 94" role="img">
-          <text x="0" y="26" class="chart-label">DefTech 2025</text>
-          <rect x="130" y="12" width="232" height="18" class="bar"/>
-          <text x="368" y="26" class="chart-value">24.9×</text>
-
-          <text x="0" y="52" class="chart-label">DefTech 2026F</text>
-          <rect x="130" y="38" width="184" height="18" class="bar"/>
-          <text x="320" y="52" class="chart-value">19.8×</text>
-
-          <text x="0" y="78" class="chart-label">Euro Primes</text>
-          <rect x="130" y="64" width="134" height="18" class="bar"/>
-          <text x="270" y="78" class="chart-value">14.4×</text>
-        </svg>
-        <div class="small"><a href="#fn5">[5]</a></div>
-      </div>
-
-      <div class="chart-box">
-        <div class="panel-title">Indexed performance since US election</div>
-        <svg viewBox="0 0 420 68" role="img">
-          <text x="0" y="26" class="chart-label">DefTech</text>
-          <rect x="130" y="12" width="262" height="18" class="bar"/>
-          <text x="398" y="26" class="chart-value">150%</text>
-
-          <text x="0" y="52" class="chart-label">Primes</text>
-          <rect x="130" y="38" width="19" height="18" class="bar"/>
-          <text x="155" y="52" class="chart-value">11%</text>
-        </svg>
-        <div class="small"><a href="#fn8">[8]</a></div>
-      </div>
-
-      <div class="chart-box">
-        <div class="panel-title">Capital flows (Europe defence-tech)</div>
-        <svg viewBox="0 0 420 110" role="img">
-          <text x="0" y="26" class="chart-label">2024</text>
-          <rect x="130" y="12" width="120" height="18" class="bar"/>
-          <text x="254" y="26" class="chart-value">~€1.8bn</text>
-
-          <text x="0" y="52" class="chart-label">2025 YTD</text>
-          <rect x="130" y="38" width="232" height="18" class="bar"/>
-          <text x="368" y="52" class="chart-value">~€3.5bn</text>
-
-          <text x="0" y="96" class="chart-label">Investors</text>
-          <circle cx="300" cy="92" r="3" fill="#8fb4ff"></circle>
-          <text x="288" y="86" class="chart-value">58 (2019)</text>
-          <circle cx="390" cy="92" r="5" fill="#8fb4ff"></circle>
-          <text x="378" y="86" class="chart-value">225 (2025)</text>
-        </svg>
-        <div class="small"><a href="#fn6">[6]</a></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION 3 -->
-  <div class="section" id="s3">
-    <h2>3. We have not adequately adjusted to either change.</h2>
-
-    <ul>
-      <li>most NATO armies lack a winning response to disruption created by new recce-strike technologies</li>
-      <li>CAPDEV mindsets and models make purchasing novel software-defined hardware difficult, especially from new vendors</li>
-      <li>upgrading software in-service and increasing platform performance remains difficult</li>
-      <li>Europe has not internalised the need for a sovereign defence-technology ecosystem</li>
-    </ul>
-
-    <div class="tile-col" style="margin-top:10px">
-
-      <div class="tile">
-        <div style="text-align:center">
-          <div class="big">80%</div>
-          <div class="sub">Share of EU defence investment going to <strong>equipment procurement</strong> <a href="#fn2">[2]</a></div>
+  <main>
+    
+      <section id="section-1" class="card">
+        <h2>1. The perceived likelihood of peer-war has changed</h2>
+        <div class="prose">
+          <p>World military expenditure is up <strong>+37% (2015–2024)</strong>, with Europe <strong>+83%</strong>.<br />
+Military aid to Ukraine totals <strong>$125bn</strong>. Sources: <a href="https://www.sipri.org/">SIPRI</a>, <a href="https://www.consilium.europa.eu/en/policies/defence-numbers/">EU Council</a>.</p>
         </div>
-      </div>
 
-      <div class="tile">
-        <div>
-          <div class="panel-title" style="text-align:center">Sovereign AI/software funding</div>
-          <div class="circle-row">
-            <div style="text-align:center">
-              <span class="circle" style="width:140px;height:140px;background:radial-gradient(circle at 35% 35%, var(--hot), transparent 60%), var(--hot);opacity:.9"></span>
-              <div class="circle-label">China<br/><strong>$148.6bn</strong> by 2030 <a href="#fn9">[9]</a></div>
+        
+        <div class="datagrid">
+          
+            <div class="datacard">
+              <div class="label">NATO at 2% GDP</div>
+              <div class="value">18 members (2024)</div>
+              
+                <div class="source">
+                  <a href="https://www.nato.int/" target="_blank" rel="noopener">NATO factsheet</a>
+                </div>
+              
             </div>
-            <div style="text-align:center">
-              <span class="circle" style="width:46px;height:46px;background:radial-gradient(circle at 35% 35%, var(--cool), transparent 60%), var(--cool);opacity:.9"></span>
-              <div class="circle-label">UK<br/><strong>~$3.5bn</strong> by 2030 <a href="#fn9">[9]</a></div>
+          
+            <div class="datacard">
+              <div class="label">EU defence investment YoY</div>
+              <div class="value">+42% (2023–2024)</div>
+              
+                <div class="source">
+                  <a href="https://www.consilium.europa.eu/en/policies/defence-numbers/" target="_blank" rel="noopener">EU Council</a>
+                </div>
+              
             </div>
-          </div>
+          
         </div>
-      </div>
+        
+      </section>
+    
+      <section id="section-2" class="card">
+        <h2>2. War’s relationship with technology has changed</h2>
+        <div class="prose">
+          <p>Software-defined, networked systems compress the OODA loop; autonomy is a structural inflection.</p>
+        </div>
 
-      <div class="tile">
-        <div style="text-align:center">
-          <div class="panel-title">US procurement concentration</div>
-          <div class="stack">
-            <span class="pill">Cold War: 51 vendors</span>
-            <span>→</span>
-            <span class="pill"><strong>Today: 5 primes ≈40%</strong> of procurement <a href="#fn8">[8]</a></span>
-          </div>
+        
+        <div class="datagrid">
+          
+            <div class="datacard">
+              <div class="label">OTA updates</div>
+              <div class="value">Normalised in AI-optimised platforms</div>
+              
+                <div class="source">
+                  <a href="https://example.com/ota" target="_blank" rel="noopener">Industry brief</a>
+                </div>
+              
+            </div>
+          
         </div>
-      </div>
+        
+      </section>
+    
+      <section id="section-3" class="card">
+        <h2>3. NATO’s defence-tech ecosystem has shifted</h2>
+        <div class="prose">
+          <p>Proliferation of smaller, investor-backed vendors; scaling and integration remain the chokepoints.</p>
+        </div>
 
-      <div class="tile">
-        <div style="text-align:center">
-          <div class="big">≈70%</div>
-          <div class="sub">Share of acquisition spend going to <strong>sustainment</strong> <a href="#fn8">[8]</a></div>
+        
+      </section>
+    
+      <section id="section-4" class="card">
+        <h2>4. We have not adequately adjusted</h2>
+        <div class="prose">
+          <p>CAPDEV models lag; recce-strike disruption outpaces doctrine.</p>
         </div>
-      </div>
+
+        
+      </section>
+    
+  </main>
+
+  <footer class="page-footer">
+    <div class="prose">
+      <p>Compiled for internal review. Export as static HTML; links remain active.</p>
     </div>
-  </div>
-
-  <!-- SECTION 4 -->
-  <div class="section" id="s4">
-    <h2>4. A new paradigm is required.</h2>
-
-    <ul>
-      <li>place software-defined capability at the centre and normalise rapid upgrades and iteration</li>
-      <li>future security and prosperity depend on nurturing NATO’s defence-technology ecosystem</li>
-      <li>become a better customer: spend, communicate, support integration and scaling</li>
-      <li>requires shifts in philosophy, processes and funding orthodoxies</li>
-    </ul>
-
-    <div class="tile" style="margin-top:10px">
-      <div style="text-align:center">
-        <div class="big">~20×</div>
-        <div class="sub">Growth in DoD awards to <strong>VC-backed firms</strong> <a href="#fn7">[7]</a></div>
-      </div>
-    </div>
-
-    <p class="note" style="margin-top:10px">
-      OTA contracting up ~95%; USAF planning 1,000–2,000 collaborative autonomous aircraft; thousands of low-cost autonomous systems fielded in 18–24 months; software-first standards (AUTOSAR Classic, SOAFEE) and mass-scale simulation (~8 million miles/day) <a href="#fn7">[7]</a><a href="#fn3">[3]</a>.
-    </p>
-  </div>
-
-  <hr>
-
-  <h2>References</h2>
-  <ol class="footnotes">
-    <li id="fn1">[1] SIPRI Fact Sheet 2024 — world and Europe trends.</li>
-    <li id="fn2">[2] Council of the EU — Defence in Numbers, 2023→2024.</li>
-    <li id="fn3">[3] McKinsey — Software-defined hardware in the age of AI.</li>
-    <li id="fn4">[4] RUSI — Emergent Approaches to Combined Arms Manoeuvre in Ukraine.</li>
-    <li id="fn5">[5] Clairfield — Defence Technology Report 2025.</li>
-    <li id="fn6">[6] Sifted — Europe’s defence-tech deals 2025.</li>
-    <li id="fn7">[7] Accenture — Defense Insight Report; US Acquisition Transformation.</li>
-    <li id="fn8">[8] Baird — Defence Technology market data; US acquisition consolidation.</li>
-    <li id="fn8m">Moneyball Military — Historical DoD share of global R&D.</li>
-    <li id="fn9">[9] Soare — Software-defined defence; ISR; Predator/Maven; AI pledges.</li>
-    <li id="fn10">[10] Dealroom — Global VC; AI share.</li>
-  </ol>
-
-</div>
+  </footer>
 </body>
 </html>
